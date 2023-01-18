@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/odinson/static/css/main.17ca9c0a.css",
+    "main.js": "/odinson/static/js/main.ddb75fdc.js",
+    "static/js/787.635aedaa.chunk.js": "/odinson/static/js/787.635aedaa.chunk.js",
+    "static/media/ian-dooley-d1UPkiFd04A-unsplash.jpg": "/odinson/static/media/ian-dooley-d1UPkiFd04A-unsplash.a8d8bb9cba24962ea2f0.jpg",
+    "static/media/bohemian-man-with-his-arms-crossed-removebg-preview.png": "/odinson/static/media/bohemian-man-with-his-arms-crossed-removebg-preview.62cd0b60c0b182f3733f.png",
+    "index.html": "/odinson/index.html",
+    "main.17ca9c0a.css.map": "/odinson/static/css/main.17ca9c0a.css.map",
+    "main.ddb75fdc.js.map": "/odinson/static/js/main.ddb75fdc.js.map",
+    "787.635aedaa.chunk.js.map": "/odinson/static/js/787.635aedaa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17ca9c0a.css",
+    "static/js/main.ddb75fdc.js"
+  ]
+}
