@@ -1,0 +1,127 @@
+nav{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 4rem 18px 4rem; 
+}
+.navbar.active{
+    position: fixed;
+    width: 100%;
+    top: -70px;
+    left: 0;
+    right: 0;
+    z-index: 990;
+    box-shadow: 0 3px 16px 0 rgb(0 0 0 / 10%);
+    background-color: white;
+    transform: translateY(70px);
+    transition: transform 1s ease;
+}
+.navbar.active h1{
+    color: #3c3c3c;
+}
+.navbar.active .menu ul li a{
+    color: #3c3c3c;
+}
+nav h1{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.5px;
+} 
+.menu{
+    display: flex;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    padding: 10px 20px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+}
+.fa-bars{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+.menu ul i{
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    float: right;
+    padding-top: 15px;
+    padding-right: 20px;
+    display: none;
+}
+@media screen and (max-width:985px) {
+    nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+   }
+   nav h1{
+    font-size: 1.6rem;
+   } 
+   .navbar.active{
+    display: none;
+   }
+    .fa-bars{
+       display: flex;
+    }
+    .menu ul i{
+        display: block;
+    }
+    .menu{
+        display: block;
+        z-index: 9999!important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background:  linear-gradient(65.38deg, #D65BCA -1.92%, #21D190 99.19%);
+        display: none;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .menu ul{
+        display: block;
+    }
+    .menu ul li{
+       padding: 17px 3rem;
+    }
+    .menu ul li a{
+        color: white;
+    }
+    .btn{
+        padding-left: 3rem;
+        border: none;
+        background: transparent;
+    }
+}
+@media screen and (max-width:550px){
+   nav{
+    padding-left: 1rem;
+    padding-right: 1rem;
+   }
+    nav h1{
+        font-size: 1.6rem;
+    }
+    .fa-bars{
+        font-size: 2rem;
+    }
+}

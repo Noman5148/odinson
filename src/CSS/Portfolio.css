@@ -1,0 +1,149 @@
+.portfolio{
+    padding: 5rem 6rem 0 6rem;
+    overflow: hidden;
+}
+.port-tittle{
+    padding-bottom: 20px;
+}
+.port-tittle h2{
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Nuosu SIL', serif;
+    position: relative;
+    color: #3c3c3c;
+}
+.port-tittle h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: #21D190;
+    border-radius: 7px;
+}
+.port-tittle h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background: #21D190;
+}
+.port-tittle p{
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+}
+.port-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.port-col{
+    margin:15px;
+}
+.project-item{
+    position: relative;
+}
+.project-item img{
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 18px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.overlay .overlay-inner {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+.project-item a:hover .overlay {
+    opacity: 1;
+}
+.overlay .overlay-inner h4 {
+    color: #3c3c3c;
+    transition: all .5s;
+    transform: translateY(-30px);
+    text-transform: capitalize;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+.overlay .overlay-inner p {
+    color: #3c3c3c;
+    transition: all .5s;
+    transform: translateY(30px);
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.project-item:hover .overlay .overlay-inner h4 {
+    transform: translateY(0);
+}
+.project-item:hover .overlay .overlay-inner p {
+    transform: translateY(0);
+}
+.nav-list{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.nav-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav-list li a {
+    cursor: pointer;
+    color: #fff;
+    background-color: #21D190;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+@media screen and (max-width:900px) {
+    .port-tittle p{
+        width: 80%;
+    }
+    .nav-list li{
+      padding-bottom: 30px;
+    }
+    .port-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:768px) {
+    .portfolio{
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+    .port-tittle p{
+        width: 100%;
+    }
+    .port-row{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .port-col{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .nav-list{
+        padding-bottom: 30px;
+    }
+}

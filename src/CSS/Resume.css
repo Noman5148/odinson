@@ -1,0 +1,104 @@
+.resume{
+    padding: 3rem 4rem 0 4rem;
+    overflow: hidden;
+}
+.res-tittle{
+    padding-bottom: 20px;
+}
+.res-tittle h2{
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Nuosu SIL', serif;
+    position: relative;
+    color: #3c3c3c;
+}
+.res-tittle h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: #21D190;
+    border-radius: 7px;
+}
+.res-tittle h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background: #21D190;
+}
+.res-tittle p{
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+}
+.resume-row{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.resume .content{
+    background-color: #f9f9ff;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 20px 10px;
+    text-align: center;
+}
+.content span{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    padding: 10px 20px;
+    color: #3c3c3c;
+}
+.content h4 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #21D190;
+    padding-bottom: 20px;
+}
+.content p{
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 500;
+    text-align: left;
+    padding: 0 20px 10px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width:900px) {
+    .resume{
+        padding: 1rem 2rem 1rem 2rem;
+        overflow: hidden;
+    }
+    .res-tittle p{
+        width: 80%;
+    }
+    .resume-row{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:768px){
+    .resume{
+        padding: 1rem;
+        overflow: hidden;
+    }
+    .resume .content{
+        background-color: #f9f9ff;
+        margin: 15px 0;
+        border-radius: 5px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .res-tittle p{
+        width: 100%;
+    }
+}

@@ -1,0 +1,77 @@
+.footer{
+    padding: 7rem 0;
+    text-align: center;
+    background: #021017;
+}
+.footer h2{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-nav ul{
+    display: flex;
+}
+.footer-nav ul li{
+    padding: 10px 20px;
+}
+.footer-nav ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+}
+.footer-icon{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer-icon a i{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    border: 2px solid white;
+    color: #ffffff;
+    background: white;
+    color: #05364d;
+    margin: 0 5px 0 0;
+    transition: all 0.5s;
+}
+.footer-icon a i:hover{
+    background: #21D190;
+    border-color: transparent;
+    color: white;
+}
+.footer p{
+    color:white;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.footer p span{
+   color: #21D190;
+}
+@media screen and (max-width:530px) {
+    .footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer-nav{
+        display: none;
+    }
+    .footer-icon{
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,114 @@
+.services{
+    height: 100%;
+    padding: 5rem 4rem 0 4rem;
+    overflow: hidden;
+}
+.ser-row{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ser-col{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.single-ser{
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+.ser-tittle h2{
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Nuosu SIL', serif;
+    position: relative;
+    color: #3c3c3c;
+}
+.ser-tittle h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: #21D190;
+    border-radius: 7px;
+}
+.ser-tittle h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background: #21D190;
+}
+.ser-tittle p{
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+}
+.service-desc{
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+.service-desc p{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.service-desc h2{
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.ico-area i {
+    display: table;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 35px;
+    background:  linear-gradient(65.38deg, #D65BCA -1.92%, #21D190 99.19%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #ffffff;
+    margin: auto;
+}
+@media screen and (max-width:1024px){
+    .ser-row{
+        grid-template-columns: 1fr 1fr;
+    }
+    .ser-tittle p{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px) {
+    .services{
+        padding: 0 1rem;
+    }
+    .ser-tittle p{
+        width: 100%;
+    }
+    .ser-tittle{
+        width: 100%;
+    }
+    .ser-tittle h2{
+        font-size: 40px;
+    }
+    .ser-row{
+        grid-template-columns: 1fr;
+    }
+    .ser-col{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

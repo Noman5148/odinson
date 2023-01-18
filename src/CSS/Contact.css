@@ -1,0 +1,169 @@
+.contact{ 
+    padding: 5rem 3rem 5rem 4rem;
+    overflow: hidden;
+}
+.contact-tittle{
+    padding-bottom: 20px;
+}
+.contact-tittle h2{
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Nuosu SIL', serif;
+    position: relative;
+    color: #3c3c3c;
+}
+.contact-tittle h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: #21D190;
+    border-radius: 7px;
+}
+.contact-tittle h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background: #21D190;
+}
+.contact-tittle p{
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+}
+.contact-row{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-column{
+    width: 45%;
+}
+.contact-widget{
+    margin-bottom: 40px;
+    padding-right: 10px;
+}
+.contact-widget-item{
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.icon{
+    height: 60px;
+    width: 60px;
+    background: #21D190;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 30px;
+    float: left;
+}
+.icon i{
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    top: 3px;
+}
+.contact-text{
+    overflow: hidden;
+}
+.contact-text h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.contact-text p{
+    font-size: 16px;
+    font-family: "Bai Jamjuree",sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 0 15px 0;
+}
+.contact-form{
+    text-align: center;
+    margin-bottom: 40px;
+}
+form{
+    display: block;
+    margin-top: 0;
+}
+form input{
+    height: 46px;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #1b191b;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    transition: all , .3s;
+}
+form textarea{
+    height: 110px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 12px;
+    font-size: 15px;
+    color: #1b191b;
+    border: 1px solid #e1e1e1;
+    resize: none;
+    margin-bottom: 9px;
+    border-radius: 4px;
+    transition: all , .3s;
+}
+form button{
+    width: 100%;
+    cursor: pointer;
+}
+.site-btn{
+    border: none;
+    display: inline-block;
+    background: #21D190;
+    color: white;
+    font-size: 14px;
+    font-family: "Rubik",sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 12px 40px 10px;
+}
+@media screen and (max-width:1024px) {
+    .contact{
+        padding: 4rem 2rem 1rem 2rem;
+        height: 100%;
+      }
+      .contact-tittle p{
+        width: 65%;
+        }
+}
+@media (max-width: 768px){
+   .contact-tittle p{
+    width: 100%;
+    }
+    .contact-row{
+    display: block;
+    padding-top: 3rem;
+    }
+   .contact-column{
+    width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .contact{
+        padding: 4rem 1rem 1rem 1rem;
+      }
+    .contact-tittle{
+        padding-right: 0;
+    }
+    .contact-tittle h2{
+        font-size: 22px; 
+    }
+}
